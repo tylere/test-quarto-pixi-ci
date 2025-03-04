@@ -1,10 +1,10 @@
 [
   {
-    "objectID": "tutorials/tutorial_1/index.html",
-    "href": "tutorials/tutorial_1/index.html",
+    "objectID": "tutorials/tutorial_2/index.html",
+    "href": "tutorials/tutorial_2/index.html",
     "title": "Test Quarto Pixi CI w/ Envs",
     "section": "",
-    "text": "import sys\n\nprint(f'{sys.version=}')\n\nsys.version='3.11.0 | packaged by conda-forge | (main, Jan 14 2023, 12:26:40) [Clang 14.0.6 ]'\n\n\n\nfrom datetime import datetime\n\ncurrent_time = datetime.now()\nprint(f'Current time: {current_time}')\n\nCurrent time: 2025-03-04 14:33:48.049445\n\n\n\n# Test addition."
+    "text": "import sys\n\nprint(f'{sys.version=}')\n\nsys.version='3.12.0 | packaged by conda-forge | (main, Oct  3 2023, 08:36:57) [Clang 15.0.7 ]'\n\n\n\nfrom datetime import datetime\n\ncurrent_time = datetime.now()\nprint(f'Current time: {current_time}')\n\nCurrent time: 2025-03-04 14:32:56.890077"
   },
   {
     "objectID": "about.html",
@@ -21,10 +21,10 @@
     "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
   },
   {
-    "objectID": "tutorials/tutorial_2/index.html",
-    "href": "tutorials/tutorial_2/index.html",
+    "objectID": "tutorials/tutorial_1/index.html",
+    "href": "tutorials/tutorial_1/index.html",
     "title": "Test Quarto Pixi CI w/ Envs",
     "section": "",
-    "text": "import sys\n\nprint(f'{sys.version=}')\n\nsys.version='3.12.0 | packaged by conda-forge | (main, Oct  3 2023, 08:36:57) [Clang 15.0.7 ]'\n\n\n\nfrom datetime import datetime\n\ncurrent_time = datetime.now()\nprint(f'Current time: {current_time}')\n\nCurrent time: 2025-03-04 14:32:56.890077"
+    "text": "import sys\n\nprint(f'{sys.version=}')\n\nsys.version='3.11.0 | packaged by conda-forge | (main, Jan 14 2023, 12:26:40) [Clang 14.0.6 ]'\n\n\n\nfrom datetime import datetime\n\ncurrent_time = datetime.now()\nprint(f'Current time: {current_time}')\n\nCurrent time: 2025-03-04 14:33:48.049445\n\n\n\n# Test addition."
   }
 ]
