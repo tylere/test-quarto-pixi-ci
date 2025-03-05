@@ -25,6 +25,6 @@
     "href": "tutorials/tutorial_1/index.html",
     "title": "Test Quarto Pixi CI w/ Envs",
     "section": "",
-    "text": "import sys\n\nprint(f'{sys.version=}')\n\nsys.version='3.11.0 | packaged by conda-forge | (main, Jan 14 2023, 12:26:40) [Clang 14.0.6 ]'\n\n\n\nfrom datetime import datetime\n\ncurrent_time = datetime.now()\nprint(f'Current time: {current_time}')\n\nCurrent time: 2025-03-04 16:28:41.289267\n\n\n\n# Test addition. Checking branch protection."
+    "text": "import sys\n\nprint(f'{sys.version=}')\n\nsys.version='3.11.0 | packaged by conda-forge | (main, Jan 14 2023, 12:26:40) [Clang 14.0.6 ]'\n\n\n\nfrom datetime import datetime\n\ncurrent_time = datetime.now()\nprint(f'Current time: {current_time}')\n\nCurrent time: 2025-03-04 16:28:41.289267\n\n\n\n# Test addition. Checking branch protection. Again."
   }
 ]
