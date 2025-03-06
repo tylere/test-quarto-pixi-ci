@@ -1,0 +1,44 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/docker-existing-dockerfile
+{
+	"name": "Tutorial 2 Container",
+	// "build": {
+	// 	// Sets the run context to one level up instead of the .devcontainer folder.
+	// 	"context": "..",
+	// 	// Update the 'dockerFile' property if you aren't using the standard 'Dockerfile' filename.
+	// 	"dockerfile": "Dockerfile"
+	// },
+	"dockerComposeFile": ["../../docker-compose.yml"],
+	"service": "tutorial-2-service",
+  "shutdownAction": "none",
+  "workspaceFolder": "/workspace/tutorials/tutorial_2",
+
+	// // Features to add to the dev container. More info: https://containers.dev/features.
+  // "features": {
+  //   "ghcr.io/devcontainers/features/python:1": {
+  //     "version": "3.12",
+  //     "installJupyterlab": true
+  //   }
+  // },
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Uncomment the next line to run commands after the container is created.
+  //"postCreateCommand": "pip install pixi && pixi init && pixi add jupyterlab pixi-kernel",
+	// pip install jupyterlab ipykernel && python -m ipykernel install --user --name=devcontainer --display-name 'Python (Dev Container)'
+	// "curl -fsSL https://pixi.sh/install.sh | bash && /home/vscode/.pixi/bin/pixi info && pip install jupyterlab ipykernel && python -m ipykernel install --user --name=devcontainer --display-name 'Python (Dev Container)'",
+	// "postCreateCommand": "pip install jupyterlab ipykernel && python -m ipykernel install --user --name=devcontainer --display-name 'Python (Dev Container)' && python -m ipykernel install --user --name=devcontainer2 --display-name 'Python (Dev Container 2)'",
+	"postCreateCommand": "curl -fsSL https://pixi.sh/install.sh | bash && /home/vscode/.pixi/bin/pixi info",
+
+	// Configure tool-specific properties.
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-python.python", "ms-toolsai.jupyter"]
+    }
+  }
+
+	// Uncomment to connect as an existing user other than the container default. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "devcontainer"
+}
+

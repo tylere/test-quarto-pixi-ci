@@ -3,12 +3,24 @@ project:
 
 website:
   title: "Test Quarto Pixi CI w/ Envs"
+  repo-url: https://github.com/tylere/test-quarto-pixi-ci-envs
+  repo-actions: [edit, source, issue]
+  reader-mode: true
   navbar:
     left:
       - href: index.qmd
         text: Home
       - about.qmd
-
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
+      - text: "Tutorials"
+        contents:
+          - text: "Tutorial 1"
+            href: tutorials/tutorial_1
+          - text: "Tutorial 2"
+            href: tutorials/tutorial_2   
 format:
   html:
     theme: cosmo
