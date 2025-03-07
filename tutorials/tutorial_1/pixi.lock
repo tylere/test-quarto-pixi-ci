@@ -72,6 +72,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/xz-tools-5.6.4-h86ecc28_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/zeromq-4.3.5-h5efb499_7.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/zipp-3.21.0-pyhd8ed1ab_1.conda
+      - pypi: https://files.pythonhosted.org/packages/f8/dc/8e9824517b9fbc42f6d95a1a5d345c6b9e6dd885ec3a301953ac7c2fb4d3/xkcd-2.4.2.tar.gz
       - pypi: .
       osx-arm64:
       - conda: https://conda.anaconda.org/conda-forge/noarch/appnope-0.1.4-pyhd8ed1ab_1.conda
@@ -131,6 +132,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/xz-tools-5.6.4-h39f12f2_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/zeromq-4.3.5-hc1bb282_7.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/zipp-3.21.0-pyhd8ed1ab_1.conda
+      - pypi: https://files.pythonhosted.org/packages/f8/dc/8e9824517b9fbc42f6d95a1a5d345c6b9e6dd885ec3a301953ac7c2fb4d3/xkcd-2.4.2.tar.gz
       - pypi: .
 packages:
 - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/_openmp_mutex-4.5-2_gnu.tar.bz2
@@ -1102,7 +1104,9 @@ packages:
 - pypi: .
   name: tutorial-1
   version: 0.1.0
-  sha256: 74b14dfd22c7ff0233860a682a1b421c12593e51436fac5a85bae7e1b6a9cba5
+  sha256: 16019962300e90e95a0ba163751b5fec30a73eb130c95e750b5b8865bd5d4d8c
+  requires_dist:
+  - xkcd>=2.4.2,<3
   requires_python: '>=3.11'
   editable: true
 - conda: https://conda.anaconda.org/conda-forge/noarch/typing_extensions-4.12.2-pyha770c72_1.conda
@@ -1134,6 +1138,10 @@ packages:
   - pkg:pypi/wcwidth?source=hash-mapping
   size: 32581
   timestamp: 1733231433877
+- pypi: https://files.pythonhosted.org/packages/f8/dc/8e9824517b9fbc42f6d95a1a5d345c6b9e6dd885ec3a301953ac7c2fb4d3/xkcd-2.4.2.tar.gz
+  name: xkcd
+  version: 2.4.2
+  sha256: 180cee51fd1733288448cd8551e36680b14811003287fe9ccf61888538dd0970
 - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/xz-5.6.4-h2dbfc1b_0.conda
   sha256: e95f911e89ec939f516ab478e67c1a1222bb8d17298d9f04d1f9da7ea3bc2815
   md5: 106b4128bc624409d2685c5a395c6778
