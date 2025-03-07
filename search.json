@@ -4,7 +4,7 @@
     "href": "tutorials/tutorial_2/index.html",
     "title": "Test Quarto Pixi CI w/ Envs",
     "section": "",
-    "text": "import sys\n\nprint(f'{sys.version=}')\n\nsys.version='3.12.0 | packaged by conda-forge | (main, Oct  3 2023, 08:36:57) [Clang 15.0.7 ]'\n\n\n\nfrom datetime import datetime\n\ncurrent_time = datetime.now()\nprint(f'Current time: {current_time}')\n\nCurrent time: 2025-03-04 14:32:56.890077"
+    "text": "import sys\n\nprint(f'{sys.version=}')\n\nsys.version='3.12.0 | packaged by conda-forge | (main, Oct  3 2023, 08:50:24) [GCC 12.3.0]'\n\n\n\nfrom datetime import datetime\n\ncurrent_time = datetime.now()\nprint(f'Current time: {current_time}')\n\nCurrent time: 2025-03-07 06:38:46.340229\n\n\n\nimport shapely"
   },
   {
     "objectID": "about.html",
