@@ -79,7 +79,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/bzip2-1.0.8-h99b78c6_7.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/ca-certificates-2025.1.31-hf0a4a13_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/comm-0.2.2-pyhd8ed1ab_1.conda
-      - conda: https://conda.anaconda.org/conda-forge/osx-arm64/debugpy-1.8.12-py311h155a34a_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/osx-arm64/debugpy-1.8.13-py311h155a34a_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/decorator-5.2.1-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/exceptiongroup-1.2.2-pyhd8ed1ab_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/executing-2.1.0-pyhd8ed1ab_1.conda
@@ -231,9 +231,9 @@ packages:
   - pkg:pypi/debugpy?source=hash-mapping
   size: 2524627
   timestamp: 1741148718242
-- conda: https://conda.anaconda.org/conda-forge/osx-arm64/debugpy-1.8.12-py311h155a34a_0.conda
-  sha256: e97c4f4f3a0f8b965b9da6c56d85ea14f4b1a79ae67fbe65295d601b43b984ac
-  md5: 0ade5b937d2aa208c872d35eedc5e6c7
+- conda: https://conda.anaconda.org/conda-forge/osx-arm64/debugpy-1.8.13-py311h155a34a_0.conda
+  sha256: c17592ec9d2fdffdcb5c1a8324c586344610686a4feac99c8a03a8461c0ee9ab
+  md5: 4a6f619085657d78f32e8b3688ad9172
   depends:
   - __osx >=11.0
   - libcxx >=18
@@ -244,8 +244,8 @@ packages:
   license_family: MIT
   purls:
   - pkg:pypi/debugpy?source=hash-mapping
-  size: 2461504
-  timestamp: 1737269987625
+  size: 2449753
+  timestamp: 1741148640482
 - conda: https://conda.anaconda.org/conda-forge/noarch/decorator-5.2.1-pyhd8ed1ab_0.conda
   sha256: c17c6b9937c08ad63cb20a26f403a3234088e57d4455600974a0ce865cb14017
   md5: 9ce473d1d1be1cc3810856a48b3fab32
