@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/docker-existing-dockerfile
 {
-	"name": "Tutorial 1 Container",
+	"name": "Tutorial 1",
 	"dockerComposeFile": ["../../docker-compose.yml", "docker-compose.codespaces.yml"],
 	"service": "tutorial-1-service",
   "shutdownAction": "none",
@@ -16,7 +16,10 @@
 	// Configure tool-specific properties.
   "customizations": {
     "vscode": {
-      "extensions": ["ms-python.python", "ms-toolsai.jupyter"]
+      "extensions": [
+				"ms-python.python",
+				"ms-toolsai.jupyter"
+			]
     }
   }
 
