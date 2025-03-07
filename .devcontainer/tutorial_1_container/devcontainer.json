@@ -29,7 +29,10 @@
 	// pip install jupyterlab ipykernel && python -m ipykernel install --user --name=devcontainer --display-name 'Python (Dev Container)'
 	// "curl -fsSL https://pixi.sh/install.sh | bash && /home/vscode/.pixi/bin/pixi info && pip install jupyterlab ipykernel && python -m ipykernel install --user --name=devcontainer --display-name 'Python (Dev Container)'",
 	// "postCreateCommand": "pip install jupyterlab ipykernel && python -m ipykernel install --user --name=devcontainer --display-name 'Python (Dev Container)' && python -m ipykernel install --user --name=devcontainer2 --display-name 'Python (Dev Container 2)'",
-	"postCreateCommand": "curl -fsSL https://pixi.sh/install.sh | bash && /home/vscode/.pixi/bin/pixi info",
+	"postCreateCommand": "curl -fsSL https://pixi.sh/install.sh | bash && /home/vscode/.pixi/bin/pixi add ipykernel && /home/vscode/.pixi/bin/pixi install && /home/vscode/.pixi/bin/pixi info && /home/vscode/.pixi/bin/pixi run python -m ipykernel install --user --name=devcontainer --display-name 'Python (Dev Container)'",
+  
+	// Can't figure out how to run a script from the container.  I tried the following:
+	//"postCreateCommand": "./tutorial_1_container/postCreateCommand.sh",
 
 	// Configure tool-specific properties.
   "customizations": {
