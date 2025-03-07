@@ -11,10 +11,7 @@
 	// "forwardPorts": [],
 	
 	// Install pixi, use it to install dependencies, and create a kernel for Jupyter.
-	"postCreateCommand": "curl -fsSL https://pixi.sh/install.sh | bash && /home/vscode/.pixi/bin/pixi install && /home/vscode/.pixi/bin/pixi info && /home/vscode/.pixi/bin/pixi run python -m ipykernel install --user --name=devcontainer --display-name 'Python (Dev Container)'",
-
-	// Can't figure out how to run a script from the container.  I tried the following:
-	//"postCreateCommand": "./tutorial_1_container/postCreateCommand.sh",
+	"postCreateCommand": "../../.devcontainer/tutorial_1_container/postCreateCommand.sh",
 
 	// Configure tool-specific properties.
   "customizations": {
