@@ -5,9 +5,7 @@ FROM mcr.microsoft.com/devcontainers/python:3
 # ENV PIXI_HOME=/usr/local
 
 # Install Pixi and other dependencies
-# RUN curl -fsSL https://pixi.sh/install.sh | bash
+# RUN curl -fsSL https://pixi.sh/install.sh | PIXI_HOME=/home/vscode bash
 
 # Add Pixi to PATH
 # ENV PATH="/root/.pixi/bin:$PATH"
-
-
