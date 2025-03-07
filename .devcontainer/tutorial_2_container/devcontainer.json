@@ -8,7 +8,7 @@
 	// 	// Update the 'dockerFile' property if you aren't using the standard 'Dockerfile' filename.
 	// 	"dockerfile": "Dockerfile"
 	// },
-	"dockerComposeFile": ["../../docker-compose.codespaces.yml"],
+	"dockerComposeFile": ["../../docker-compose.yml", "docker-compose.codespaces.yml"],
 	"service": "tutorial-2-service",
   "shutdownAction": "none",
   "workspaceFolder": "/workspace/tutorials/tutorial_2",
@@ -24,12 +24,12 @@
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 
-	// Uncomment the next line to run commands after the container is created.
-  //"postCreateCommand": "pip install pixi && pixi init && pixi add jupyterlab pixi-kernel",
-	// pip install jupyterlab ipykernel && python -m ipykernel install --user --name=devcontainer --display-name 'Python (Dev Container)'
-	// "curl -fsSL https://pixi.sh/install.sh | bash && /home/vscode/.pixi/bin/pixi info && pip install jupyterlab ipykernel && python -m ipykernel install --user --name=devcontainer --display-name 'Python (Dev Container)'",
-	// "postCreateCommand": "pip install jupyterlab ipykernel && python -m ipykernel install --user --name=devcontainer --display-name 'Python (Dev Container)' && python -m ipykernel install --user --name=devcontainer2 --display-name 'Python (Dev Container 2)'",
-	"postCreateCommand": "curl -fsSL https://pixi.sh/install.sh | bash && /home/vscode/.pixi/bin/pixi info",
+	// "postCreateCommand": "curl -fsSL https://pixi.sh/install.sh | bash && /home/vscode/.pixi/bin/pixi add ipykernel && /home/vscode/.pixi/bin/pixi install && /home/vscode/.pixi/bin/pixi info && /home/vscode/.pixi/bin/pixi run python -m ipykernel install --user --name=devcontainer2 --display-name 'Python (Dev Container2)'",
+	"postCreateCommand": "curl -fsSL https://pixi.sh/install.sh | bash && /home/vscode/.pixi/bin/pixi install && /home/vscode/.pixi/bin/pixi add python==3.12"
+	
+	// Error:   x Unable to solve pypi dependencies for the default environment because no
+  // | compatible python interpreter can be installed for the current platform
+  // help: Try converting your [pypi-dependencies] to conda [dependencies]
 
 	// Configure tool-specific properties.
   "customizations": {
