@@ -16,9 +16,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Test Quarto Pixi CI w/ Envs",
+    "title": "Test Quarto Pixi CI w/ Multiple Environments",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "This repository demonstrates how to create a website of coding tutorials. - The website is static and is built by the Quarto publishing system. - Website updates are triggered by GitHub Actions. - Static files are hosted on GitHub pages. - Each tutorial has a separate coding environment, allowing the use of different versions of libraries (or even different languages). Versioned libraries are defined by a configuration file within the tutorial folder (example for tutorial 1, example for tutorial 2). - To execute code within the tutorials, users can either: 1. Download the notebook, and install dependencies in a local environment. 2. Launch an online execution environment (GitHub Codespace) the configures the coding environment."
   },
   {
     "objectID": "tutorials/tutorial_1/index.html",
