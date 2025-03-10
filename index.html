@@ -185,7 +185,23 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This repository demonstrates how to create a <a href="https://tylere.github.io/test-quarto-pixi-ci/">website</a> of coding tutorials. - The website is static and is built by the <a href="https://quarto.org/">Quarto</a> publishing system. - Website updates are triggered by GitHub Actions. - Static files are hosted on GitHub pages. - Each tutorial has a separate coding environment, allowing the use of different versions of libraries (or even different languages). Versioned libraries are defined by a configuration file within the tutorial folder (<a href="https://github.com/tylere/test-quarto-pixi-ci/blob/main/tutorials/tutorial_1/pyproject.toml">example for tutorial 1</a>, <a href="https://github.com/tylere/test-quarto-pixi-ci/blob/main/tutorials/tutorial_2/pyproject.toml">example for tutorial 2</a>). - To execute code within the tutorials, users can either: 1. Download the notebook, and install dependencies in a local environment. 2. Launch an online execution environment (<a href="https://code.visualstudio.com/docs/remote/codespaces">GitHub Codespace</a>) the configures the coding environment.</p>
+<p>This repository demonstrates how to create a of coding tutorial website that (hopefully) reduces barriers to user contributions.</p>
+<p>Key characteristics:</p>
+<ul>
+<li>The website is composed of static pages and is built by the <a href="https://quarto.org/">Quarto</a> publishing system.</li>
+<li>Website updates are <a href="https://github.com/tylere/test-quarto-pixi-ci/blob/main/.github/workflows/publish.yml">triggered by a GitHub Action</a>.</li>
+<li>Static files are <a href="https://tylere.github.io/test-quarto-pixi-ci/">hosted on GitHub pages</a>.</li>
+<li>Each tutorial has a separate coding environment, allowing the use of different versions of libraries (or even different languages). Versioned libraries are defined by a configuration file within the tutorial folders.
+<ul>
+<li><a href="https://github.com/tylere/test-quarto-pixi-ci/blob/main/tutorials/tutorial_1/pyproject.toml">Example for Tutorial 1</a></li>
+<li><a href="https://github.com/tylere/test-quarto-pixi-ci/blob/main/tutorials/tutorial_2/pyproject.toml">Example for Tutorial 2</a></li>
+</ul></li>
+<li>To execute code within the tutorials, users can either:
+<ol type="1">
+<li>Download the Jupyter notebook and install dependencies in a local environment.</li>
+<li>Launch an online execution environment (<a href="https://code.visualstudio.com/docs/remote/codespaces">GitHub Codespace</a>) that includes a container configured for the tutorial (<a href="https://github.com/tylere/test-quarto-pixi-ci/tree/main/.devcontainer">Container Configuration</a>)</li>
+</ol></li>
+</ul>
 
 
 
