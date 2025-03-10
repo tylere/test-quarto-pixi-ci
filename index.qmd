@@ -2,11 +2,16 @@
 title: "Test Quarto Pixi CI w/ Multiple Environments"
 ---
 
-This repository demonstrates how to create a [website](https://tylere.github.io/test-quarto-pixi-ci/) of coding tutorials.
-- The website is static and is built by the [Quarto](https://quarto.org/) publishing system.
-- Website updates are triggered by GitHub Actions.
-- Static files are hosted on GitHub pages.
-- Each tutorial has a separate coding environment, allowing the use of different versions of libraries (or even different languages). Versioned libraries are defined by a configuration file within the tutorial folder ([example for tutorial 1](https://github.com/tylere/test-quarto-pixi-ci/blob/main/tutorials/tutorial_1/pyproject.toml), [example for tutorial 2](https://github.com/tylere/test-quarto-pixi-ci/blob/main/tutorials/tutorial_2/pyproject.toml)).
+This repository demonstrates how to create a of coding tutorial website that (hopefully) reduces barriers to user contributions.
+
+Key characteristics:
+
+- The website is composed of static pages and is built by the [Quarto](https://quarto.org/) publishing system.
+- Website updates are [triggered by a GitHub Action](https://github.com/tylere/test-quarto-pixi-ci/blob/main/.github/workflows/publish.yml).
+- Static files are [hosted on GitHub pages](https://tylere.github.io/test-quarto-pixi-ci/).
+- Each tutorial has a separate coding environment, allowing the use of different versions of libraries (or even different languages). Versioned libraries are defined by a configuration file within the tutorial folders.
+  - [Example for Tutorial 1](https://github.com/tylere/test-quarto-pixi-ci/blob/main/tutorials/tutorial_1/pyproject.toml)
+  - [Example for Tutorial 2](https://github.com/tylere/test-quarto-pixi-ci/blob/main/tutorials/tutorial_2/pyproject.toml)
 - To execute code within the tutorials, users can either:
-  1. Download the notebook, and install dependencies in a local environment.
-  2. Launch an online execution environment ([GitHub Codespace](https://code.visualstudio.com/docs/remote/codespaces)) the configures the coding environment.
+  1. Download the Jupyter notebook and install dependencies in a local environment.
+  2. Launch an online execution environment ([GitHub Codespace](https://code.visualstudio.com/docs/remote/codespaces)) that includes a container configured for the tutorial ([Container Configuration](https://github.com/tylere/test-quarto-pixi-ci/tree/main/.devcontainer))
