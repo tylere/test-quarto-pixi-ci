@@ -20,7 +20,9 @@ website:
           - text: "Tutorial 1"
             href: tutorials/tutorial_1
           - text: "Tutorial 2"
-            href: tutorials/tutorial_2   
+            href: tutorials/tutorial_2
+          - text: "Tutorial 3 (R)"
+            href: tutorials/tutorial_3   
 format:
   html:
     theme: cosmo

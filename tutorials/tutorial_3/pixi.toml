@@ -1,0 +1,15 @@
+[project]
+authors = ["Tyler Erickson <tyler@vorgeo.com>"]
+channels = ["conda-forge"]
+name = "tutorial_3"
+platforms = ["osx-arm64", "linux-64", "linux-aarch64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+jupyter = ">=1.1.1,<2"
+jupyter_client = ">=8.6.3,<9"
+r = ">=4.4,<4.5"
+r-irkernel = ">=1.3.2,<2"
+r-ggplot2 = ">=3.5.1,<4"
