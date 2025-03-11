@@ -4,7 +4,7 @@
     "href": "tutorials/tutorial_2/index.html",
     "title": "Test Quarto Pixi CI w/ Envs",
     "section": "",
-    "text": "import sys\n\nprint(f'{sys.version=}')\n\nsys.version='3.12.0 | packaged by conda-forge | (main, Oct  3 2023, 08:50:24) [GCC 12.3.0]'\n\n\n\nfrom datetime import datetime\n\ncurrent_time = datetime.now()\nprint(f'Current time: {current_time}')\n\nCurrent time: 2025-03-07 21:51:58.344035\n\n\n\nimport shapely\n\n\nimport xkcd\n\n\n---------------------------------------------------------------------------\nModuleNotFoundError                       Traceback (most recent call last)\nCell In[4], line 1\n----&gt; 1 import xkcd\n\nModuleNotFoundError: No module named 'xkcd'"
+    "text": "Tip with Title\n\n\n\nIn order to run the code in this tutorial, you can either download the notebook to run it on your local computer, or click the button below to run the tutorial in a GitHub Codespace.\n\n\n\n\nimport sys\n\nprint(f'{sys.version=}')\n\n\nfrom datetime import datetime\n\ncurrent_time = datetime.now()\nprint(f'Current time: {current_time}')\n\n\nimport shapely\n\n\nimport xkcd"
   },
   {
     "objectID": "about.html",
@@ -25,6 +25,6 @@
     "href": "tutorials/tutorial_1/index.html",
     "title": "Test Quarto Pixi CI w/ Envs",
     "section": "",
-    "text": "import sys\n\nprint(f'{sys.version=}')\n\nsys.version='3.11.0 | packaged by conda-forge | (main, Jan 14 2023, 12:27:40) [GCC 11.3.0]'\n\n\n\nfrom datetime import datetime\n\ncurrent_time = datetime.now()\nprint(f'Current time: {current_time}')\n\nCurrent time: 2025-03-10 18:19:42.493912\n\n\n\nimport xkcd\n\n\nimport shapely\n\n\n---------------------------------------------------------------------------\nModuleNotFoundError                       Traceback (most recent call last)\nCell In[4], line 1\n----&gt; 1 import shapely\n\nModuleNotFoundError: No module named 'shapely'"
+    "text": "Tip with Title\n\n\n\nIn order to run the code in this tutorial, you can either download the notebook to run it on your local computer, or click the button below to run the tutorial in a GitHub Codespace.\n\n\n\n\nimport sys\n\nprint(f'{sys.version=}')\n\n\nfrom datetime import datetime\n\ncurrent_time = datetime.now()\nprint(f'Current time: {current_time}')\n\n\nimport xkcd\n\n\nimport shapely"
   }
 ]
