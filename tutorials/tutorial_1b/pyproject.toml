@@ -1,6 +1,6 @@
 [project]
 authors = [{name = "Tyler Erickson", email = "tyler@vorgeo.com"}]
-name = "tutorial_3b"
+name = "tutorial_1b"
 requires-python = ">= 3.11"
 version = "0.1.0"
 dependencies = ["xkcd>=2.4.2,<3"]
@@ -14,7 +14,7 @@ channels = ["conda-forge"]
 platforms = ["osx-arm64", "linux-64", "linux-aarch64"]
 
 [tool.pixi.pypi-dependencies]
-tutorial_3b = { path = ".", editable = true }
+tutorial_1b = { path = ".", editable = true }
 
 [tool.pixi.tasks]
 

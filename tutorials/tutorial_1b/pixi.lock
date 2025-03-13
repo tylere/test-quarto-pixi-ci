@@ -1539,9 +1539,9 @@ packages:
   size: 110051
   timestamp: 1733367480074
 - pypi: .
-  name: tutorial-3b
+  name: tutorial-1b
   version: 0.1.0
-  sha256: a449998f447054ede3f002346c045a142d8b11035226682b98776d48972b8760
+  sha256: 6eefe37296d5ec2fe220c88e5c464ae95a91bed909caad605e7bad7403e486de
   requires_dist:
   - xkcd>=2.4.2,<3
   requires_python: '>=3.11'
