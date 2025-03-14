@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Test Quarto Pixi CI w/ Multiple Environments – Test Quarto Pixi CI w/ Envs</title>
+<title>Test out that R works – Test Quarto Pixi CI w/ Envs</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,25 +20,59 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-c55491ef36bbbc1896d0375eee332cfe.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-c55491ef36bbbc1896d0375eee332cfe.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,7 +102,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -78,7 +112,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Test Quarto Pixi CI w/ Envs</span>
     </a>
   </div>
@@ -89,11 +123,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -112,7 +146,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Test Quarto Pixi CI w/ Multiple Environments</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Test out that R works</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -143,19 +177,19 @@ ul.task-list li input[type="checkbox"] {
       <ul id="" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tutorials/tutorial_1" class="sidebar-item-text sidebar-link">
+  <a href="../../tutorials/tutorial_1" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Tutorial 1</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tutorials/tutorial_2" class="sidebar-item-text sidebar-link">
+  <a href="../../tutorials/tutorial_2" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Tutorial 2</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tutorials/tutorial_3" class="sidebar-item-text sidebar-link">
+  <a href="../../tutorials/tutorial_3" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Tutorial 3 (R)</span></a>
   </div>
 </li>
@@ -174,7 +208,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Test Quarto Pixi CI w/ Multiple Environments</h1>
+<h1 class="title">Test out that R works</h1>
 </div>
 
 
@@ -191,23 +225,27 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This repository demonstrates how to create a of coding tutorial website that (hopefully) reduces barriers to user contributions.</p>
-<p>Key characteristics:</p>
-<ul>
-<li>The website is composed of static pages and is built by the <a href="https://quarto.org/">Quarto</a> publishing system.</li>
-<li>Website updates are <a href="https://github.com/tylere/test-quarto-pixi-ci/blob/main/.github/workflows/publish.yml">triggered by a GitHub Action</a>.</li>
-<li>Static files are <a href="https://tylere.github.io/test-quarto-pixi-ci/">hosted on GitHub pages</a>.</li>
-<li>Each tutorial has a independent coding environment, allowing the use of different versions of libraries (or even different languages). Versioned libraries are defined by a configuration file within the tutorial folder.
-<ul>
-<li><a href="https://github.com/tylere/test-quarto-pixi-ci/blob/main/tutorials/tutorial_1/pyproject.toml">Example for Tutorial 1</a> which uses Python 3.11 and has the <code>xkcd</code> Python package installed.</li>
-<li><a href="https://github.com/tylere/test-quarto-pixi-ci/blob/main/tutorials/tutorial_2/pyproject.toml">Example for Tutorial 2</a> which uses Python 3.12 and has the <code>shapely</code> Python package installed.</li>
-</ul></li>
-<li>To execute code within the tutorials, users can either:
-<ol type="1">
-<li>Download the Jupyter notebook and install dependencies in a local environment.</li>
-<li>Launch an online execution environment (<a href="https://code.visualstudio.com/docs/remote/codespaces">GitHub Codespace</a>) that includes a container configured for the tutorial (<a href="https://github.com/tylere/test-quarto-pixi-ci/tree/main/.devcontainer">Container Configuration</a>)</li>
-</ol></li>
-</ul>
+<div id="cell-2" class="cell" data-vscode="{&quot;languageId&quot;:&quot;r&quot;}" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>emp.data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>   <span class="at">emp_id =</span> <span class="fu">c</span> (<span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>), </span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>   <span class="at">emp_name =</span> <span class="fu">c</span>(<span class="st">"Rick"</span>,<span class="st">"Dan"</span>,<span class="st">"Michelle"</span>,<span class="st">"Ryan"</span>,<span class="st">"Gary"</span>),</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>   <span class="at">salary =</span> <span class="fu">c</span>(<span class="fl">623.3</span>,<span class="fl">515.2</span>,<span class="fl">611.0</span>,<span class="fl">729.0</span>,<span class="fl">843.25</span>), </span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>   </span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>   <span class="at">start_date =</span> <span class="fu">as.Date</span>(<span class="fu">c</span>(<span class="st">"2012-01-01"</span>, <span class="st">"2013-09-23"</span>, <span class="st">"2014-11-15"</span>, <span class="st">"2014-05-11"</span>,</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>      <span class="st">"2015-03-27"</span>)),</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>   <span class="at">stringsAsFactors =</span> <span class="cn">FALSE</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Print the data frame.         </span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(emp.data) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  emp_id emp_name salary start_date
+1      1     Rick 623.30 2012-01-01
+2      2      Dan 515.20 2013-09-23
+3      3 Michelle 611.00 2014-11-15
+4      4     Ryan 729.00 2014-05-11
+5      5     Gary 843.25 2015-03-27</code></pre>
+</div>
+</div>
 
 
 
@@ -634,4 +672,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/tylere/test-quarto-pixi-ci-envs/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/tylere/test-quarto-pixi-ci-envs/blob/main/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/tylere/test-quarto-pixi-ci-envs/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.dev/tylere/test-quarto-pixi-ci-envs/blob/main/tutorials/tutorial_3/index.ipynb" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/tylere/test-quarto-pixi-ci-envs/blob/main/tutorials/tutorial_3/index.ipynb" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/tylere/test-quarto-pixi-ci-envs/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

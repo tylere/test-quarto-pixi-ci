@@ -1,10 +1,17 @@
 [
   {
-    "objectID": "tutorials/tutorial_2/index.html",
-    "href": "tutorials/tutorial_2/index.html",
+    "objectID": "tutorials/tutorial_3/index.html",
+    "href": "tutorials/tutorial_3/index.html",
+    "title": "Test out that R works",
+    "section": "",
+    "text": "emp.data &lt;- data.frame(\n   emp_id = c (1:5), \n   emp_name = c(\"Rick\",\"Dan\",\"Michelle\",\"Ryan\",\"Gary\"),\n   salary = c(623.3,515.2,611.0,729.0,843.25), \n   \n   start_date = as.Date(c(\"2012-01-01\", \"2013-09-23\", \"2014-11-15\", \"2014-05-11\",\n      \"2015-03-27\")),\n   stringsAsFactors = FALSE\n)\n# Print the data frame.         \nprint(emp.data) \n\n  emp_id emp_name salary start_date\n1      1     Rick 623.30 2012-01-01\n2      2      Dan 515.20 2013-09-23\n3      3 Michelle 611.00 2014-11-15\n4      4     Ryan 729.00 2014-05-11\n5      5     Gary 843.25 2015-03-27"
+  },
+  {
+    "objectID": "tutorials/tutorial_1b/index.html",
+    "href": "tutorials/tutorial_1b/index.html",
     "title": "Test Quarto Pixi CI w/ Envs",
     "section": "",
-    "text": "Tip with Title\n\n\n\nIn order to run the code in this tutorial, you can either download the notebook to run it on your local computer, or click the button below to run the tutorial in a GitHub Codespace.\n\n\n\n\nimport sys\n\nprint(f'{sys.version=}')\n\nsys.version='3.12.0 | packaged by conda-forge | (main, Oct  3 2023, 08:50:24) [GCC 12.3.0]'\n\n\n\nfrom datetime import datetime\n\ncurrent_time = datetime.now()\nprint(f'Current time: {current_time}')\n\nCurrent time: 2025-03-12 03:34:26.087808\n\n\n\nimport shapely\n\n\nimport xkcd\n\n\n---------------------------------------------------------------------------\nModuleNotFoundError                       Traceback (most recent call last)\nCell In[4], line 1\n----&gt; 1 import xkcd\n\nModuleNotFoundError: No module named 'xkcd'"
+    "text": "import sys\n\nprint(f'{sys.version=}')\n\nsys.version='3.11.0 | packaged by conda-forge | (main, Jan 14 2023, 05:01:18) [GCC 11.3.0]'\n\n\n\nfrom datetime import datetime\n\ncurrent_time = datetime.now()\nprint(f'Current time: {current_time}')\n\nCurrent time: 2025-03-07 21:51:18.873072\n\n\n\nimport xkcd\n\n\nimport shapely\n\n\n---------------------------------------------------------------------------\nModuleNotFoundError                       Traceback (most recent call last)\nCell In[4], line 1\n----&gt; 1 import shapely\n\nModuleNotFoundError: No module named 'shapely'"
   },
   {
     "objectID": "about.html",
@@ -26,5 +33,12 @@
     "title": "Test Quarto Pixi CI w/ Envs",
     "section": "",
     "text": "Tip with Title\n\n\n\nIn order to run the code in this tutorial, you can either download the notebook to run it on your local computer, or click the button below to run the tutorial in a GitHub Codespace.\n\n\n\n\nimport sys\n\nprint(f'{sys.version=}')\n\nsys.version='3.11.0 | packaged by conda-forge | (main, Jan 14 2023, 05:01:18) [GCC 11.3.0]'\n\n\n\nfrom datetime import datetime\n\ncurrent_time = datetime.now()\nprint(f'Current time: {current_time}')\n\nCurrent time: 2025-03-12 03:33:37.551973\n\n\n\nimport xkcd\n\n\nimport shapely\n\n\n---------------------------------------------------------------------------\nModuleNotFoundError                       Traceback (most recent call last)\nCell In[4], line 1\n----&gt; 1 import shapely\n\nModuleNotFoundError: No module named 'shapely'"
+  },
+  {
+    "objectID": "tutorials/tutorial_2/index.html",
+    "href": "tutorials/tutorial_2/index.html",
+    "title": "Test Quarto Pixi CI w/ Envs",
+    "section": "",
+    "text": "Tip with Title\n\n\n\nIn order to run the code in this tutorial, you can either download the notebook to run it on your local computer, or click the button below to run the tutorial in a GitHub Codespace.\n\n\n\n\nimport sys\n\nprint(f'{sys.version=}')\n\nsys.version='3.12.0 | packaged by conda-forge | (main, Oct  3 2023, 08:50:24) [GCC 12.3.0]'\n\n\n\nfrom datetime import datetime\n\ncurrent_time = datetime.now()\nprint(f'Current time: {current_time}')\n\nCurrent time: 2025-03-12 03:34:26.087808\n\n\n\nimport shapely\n\n\nimport xkcd\n\n\n---------------------------------------------------------------------------\nModuleNotFoundError                       Traceback (most recent call last)\nCell In[4], line 1\n----&gt; 1 import xkcd\n\nModuleNotFoundError: No module named 'xkcd'"
   }
 ]
