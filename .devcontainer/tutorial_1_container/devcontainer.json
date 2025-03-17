@@ -7,18 +7,25 @@
   "shutdownAction": "none",
   "workspaceFolder": "/workspace/tutorials/tutorial_1",
 
+	// Make the container name and service name available to the container.
+	"containerEnv": {
+		"CONTAINER_NAME": "Tutorial 1",
+		"SERVICE_NAME": "tutorial-1-service"
+	},
+
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 	
 	// Install pixi, use it to install dependencies, and create a kernel for Jupyter.
-	"postCreateCommand": "../../.devcontainer/tutorial_1_container/postCreateCommand.sh",
+	"postCreateCommand": "../../.devcontainer/postCreateCommands.sh",
 
 	// Configure tool-specific properties.
   "customizations": {
     "vscode": {
       "extensions": [
 				"ms-python.python",
-				"ms-toolsai.jupyter"
+				"ms-toolsai.jupyter",
+				// "charliermarsh.ruff"
 			]
     }
   }
