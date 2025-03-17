@@ -7,11 +7,17 @@
   "shutdownAction": "none",
   "workspaceFolder": "/workspace/tutorials/tutorial_3",
 
+	// Make the container name and service name available to the container.
+	"containerEnv": {
+		"CONTAINER_NAME": "Tutorial 3 (R)",
+		"SERVICE_NAME": "tutorial-3-service"
+	},
+
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 	
 	// Install pixi, use it to install dependencies, and create a kernel for Jupyter.
-	"postCreateCommand": "../../.devcontainer/tutorial_3_container/postCreateCommand.sh",
+	"postCreateCommand": "../../.devcontainer/tutorial_3_container/postCreateCommands_R.sh",
 
 	// Configure tool-specific properties.
   "customizations": {
